@@ -10,7 +10,7 @@ import { Certificates } from './Certificates'
 function Body({cvData}){
     
     const [tabIndex, setTabIndex] = useState(0)
-    const tabs = [<AboutMe cvData={cvData}/>, <Projects cvData={cvData}/>, <Certificates cvData={cvData}/>]
+    const tabs = [<AboutMe cvData={cvData} key={0}/>, <Projects cvData={cvData} key={1}/>, <Certificates cvData={cvData} key={2}/>]
 
     const string = "nav-link col-4"
     return (
