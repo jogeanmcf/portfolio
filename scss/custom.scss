@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500&display=swap');
+
+/*Bootstrap core imports - adjust for your case*/
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/mixins";
+
+* {
+    font-family: "Roboto mono", sans-serif !important
+  }
+
+$primary: #ec008c;
+$secondary: #1ab7ea;
+$tertiary: #3fb247;
+
+// Adjust path to bootstrap for your case
+@import "~bootstrap/scss/bootstrap";
+
+// .bg classes not automatically generated. As an example, manlly add
+// .bg-custom-color
+
+.bg-custom-color{background-color: var(--bs-custom-color);};
