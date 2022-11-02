@@ -8,7 +8,7 @@ function Certificates({cvData}){
             id="nav-certificates" role="tabpanel" aria-labelledby="nav-certificates-tab">
             <h1>Courses</h1>
             {cvData.certificates.map((item,index) => {
-                return <CertificateCard certification={item}/>
+                return <CertificateCard certification={item} key={index.toString()}/>
             })}
             {/* <h1>Academics</h1> */}
         </div>

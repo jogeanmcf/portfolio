@@ -9,19 +9,19 @@ function Projects({cvData}){
             id="nav-projects" role="tabpanel" aria-labelledby="nav-projects-tab">
         <h1>Front - End</h1>
         {cvData?.projects.map((project, index) => {
-            return <ProjectCard project={project} key={index}/>
+            return <ProjectCard project={project} key={index.toString()}/>
         })}
         <h1>Papers</h1>
         {cvData?.publications.map((publication,index) => {
-            return <PublicationCard publication={publication} key={index}/>
+            return <PublicationCard publication={publication} key={index.toString()}/>
         })}
         </div>
     );
 }
 
-function ProjectCard({project, key}){
+function ProjectCard({project}){
     return(
-        <div className="card w-auto mb-4 ml-2 bg-light" key={key}>
+        <div className="card w-auto mb-4 ml-2 bg-light">
             <div className="card-body">
                 <h3 className="card-title">{project.title}</h3>
                 <p>{project.description}</p>
@@ -35,10 +35,9 @@ function ProjectCard({project, key}){
     );
 }
 
-function PublicationCard({publication, key}){
+function PublicationCard({publication}){
     return(
-        
-        <div className="card w-auto mb-4 bg-light" key={key}>
+        <div className="card w-auto mb-4 bg-light">
             <div className="card-body">
                 <Link href={publication.link}>
                     <a className="link-secondary"><h5 className="card-title">{publication.title}</h5></a>
