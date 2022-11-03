@@ -8,12 +8,12 @@ function AboutMe({cvData}){
             id="nav-aboutme" role="tabpanel" aria-labelledby="nav-aboutme-tab">
             <h1>About me</h1>
             <p>{cvData?.personalInfo[0].aboutMe}</p>
-            <h1>Idioms</h1>
+            <h1>Languages</h1>
             <ul>
                 <li>Portuguese (native)</li>
                 <li>English (advanced)</li>
             </ul>
-            <h1>Hobies</h1>
+            <h1>Hobbies</h1>
             <ul>
                 <li>Guitar</li>
                 <li>Violin</li>
