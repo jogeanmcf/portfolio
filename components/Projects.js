@@ -25,11 +25,14 @@ function ProjectCard({project}){
             <div className="card-body">
                 <h3 className="card-title">{project.title}</h3>
                 <p>{project.description}</p>
-                <Link href={project.link}>
-                    <a target="_blank">
-                        <Image src="/images/github.svg" width="24" height="24"></Image>
-                    </a>
-                </Link>
+                <div>
+                    <Link href={project.githubLink}>
+                        <a target="_blank">
+                            <Image src="/images/github.svg" width="24" height="24"></Image>
+                        </a>
+                    </Link>
+                    
+                </div>
             </div>
         </div>
     );

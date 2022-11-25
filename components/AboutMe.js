@@ -7,7 +7,7 @@ function AboutMe({cvData}){
             // className="tab-pane fade show active" 
             id="nav-aboutme" role="tabpanel" aria-labelledby="nav-aboutme-tab">
             <h1>About me</h1>
-            <p>{cvData?.personalInfo[0].aboutMe}</p>
+            <p>{cvData?.personalInfo.aboutMe}</p>
             <h1>Languages</h1>
             <ul>
                 <li>Portuguese (native)</li>
